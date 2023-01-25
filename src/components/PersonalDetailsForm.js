@@ -5,7 +5,7 @@ class PersonalDetailsForm extends Component {
 		return (
 			<div>
 				<h3>Personal Details</h3>
-				<form className="PersonalDetails">
+				<form className="personal-details-form">
 					<input type="text" placeholder="Full name"/>
 					<input type="text" placeholder="Job Title"/>
 					<input type="tel" placeholder="Phone number"/>
