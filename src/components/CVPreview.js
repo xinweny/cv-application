@@ -2,6 +2,7 @@ import { Component } from 'react';
 
 import PersonalDetailsPreview from './PersonalDetailsPreview';
 import WorkExperiencePreview from './WorkExperiencePreview';
+import EducationPreview from './EducationPreview';
 
 class CVPreview extends Component {
 	render() {
@@ -14,6 +15,7 @@ class CVPreview extends Component {
 				</div>
 				<div>
 					<h3>Education</h3>
+					<EducationPreview />
 				</div>
 			</div>
 		);

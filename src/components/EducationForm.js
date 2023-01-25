@@ -9,6 +9,7 @@ class EducationForm extends Component {
 				<input type="text" placeholder="Name of degree/certification"/>
 				<input type="text" placeholder="From"/>
 				<input type="text" placeholder="To"/>
+				<textarea cols="30" rows="3" placeholder="Description"></textarea>
 			</form>
 		);
 	}
