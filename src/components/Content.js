@@ -45,6 +45,7 @@ class Content extends Component {
 		this.addEducation = this.addEducation.bind(this);
 		this.deleteSection = this.deleteSection.bind(this);
 		this.updateSection = this.updateSection.bind(this);
+		this.updatePersonalDetails = this.updatePersonalDetails.bind(this);
 	}
 
 	addWorkExperience() {
@@ -88,6 +89,13 @@ class Content extends Component {
 		this.setState(newState);
 	}
 
+	updatePersonalDetails(field, value) {
+		const newState = {...this.state};
+		newState.personal[field] = value;
+
+		this.setState(newState);
+	}
+
 	updateSection(section, id, field, value) {
 		const newState = {...this.state};
 		const infos = newState[section];
@@ -102,7 +110,7 @@ class Content extends Component {
 	render() {
 		return (
 			<div>
-				<CVForm cvInfo={this.state} addWork={this.addWorkExperience} addEd={this.addEducation} deleteSection={this.deleteSection} updateSection={this.updateSection} />
+				<CVForm cvInfo={this.state} addWork={this.addWorkExperience} addEd={this.addEducation} deleteSection={this.deleteSection} updateSection={this.updateSection} updatePersonal={this.updatePersonalDetails} />
 				<CVPreview cvInfo={this.state} />
 			</div>
 		);

@@ -11,7 +11,7 @@ class CVForm extends Component {
 			<div>
 				<div>
 					<h3>Personal Details</h3>
-					<PersonalDetailsForm />
+					<PersonalDetailsForm handleChange={this.props.updatePersonal} />
 				</div>
 				<div>
 					<h3>Work Experience</h3>
