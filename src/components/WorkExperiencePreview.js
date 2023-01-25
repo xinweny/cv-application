@@ -8,6 +8,7 @@ class WorkExperiencePreview extends Component {
 					<div>
 						<p>Position</p>
 						<p>Company</p>
+						<p>Location</p>
 					</div>
 					<p>From - To</p>
 				</div>
