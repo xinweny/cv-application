@@ -57,7 +57,7 @@ class Content extends Component {
 
 		this.setState({
 			...this.state,
-			work: [...this.work, workExp],
+			work: [...this.state.work, workExp],
 		})
 	}
 
@@ -73,14 +73,14 @@ class Content extends Component {
 
 		this.setState({
 			...this.state,
-			education: [...this.education, education],
+			education: [...this.state.education, education],
 		})
 	}
 
 	render() {
 		return (
 			<div>
-				<CVForm cvInfo={this.state} handleAddWork={this.addWorkSection} handleAddEd={this.addEducationSection} />
+				<CVForm cvInfo={this.state} addWork={this.addWorkExperience} addEd={this.addEducation} />
 				<CVPreview cvInfo={this.state} />
 			</div>
 		);

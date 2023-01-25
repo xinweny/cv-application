@@ -3,7 +3,7 @@ import { Component } from 'react';
 class AddSectionButton extends Component {
 	render() {
 		return (
-			<button>+</button>
+			<button onClick={this.props.handleClick}>+</button>
 		);
 	}
 }
