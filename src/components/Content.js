@@ -8,7 +8,7 @@ class Content extends Component {
 		super(props);
 
 		this.state = {
-			personalDetails: {
+			personal: {
 				name: '',
 				title: '',
 				address: '',
@@ -16,8 +16,25 @@ class Content extends Component {
 				tel: '',
 				description: '',
 			},
-			workExperience: [],
-			education: [],
+			work: [
+				{
+					position: '',
+					company: '',
+					location: '',
+					from: '',
+					to: '',
+					description: '',
+				}
+			],
+			education: [
+				{
+					name: '',
+					location: '',
+					cert: '',
+					from: '',
+					to: '',
+				}
+			],
 		}
 	}
 
