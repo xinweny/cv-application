@@ -39,6 +39,9 @@ class Content extends Component {
 				}
 			],
 		}
+
+		this.addWorkSection = this.addWorkSection.bind(this);
+		this.addEducationSection = this.addEducationSection.bind(this);
 	}
 
 	addWorkSection() {
