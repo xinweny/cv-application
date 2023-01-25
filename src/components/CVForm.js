@@ -2,6 +2,7 @@ import { Component } from 'react';
 
 import PersonalDetailsForm from './PersonalDetailsForm';
 import WorkExperienceForm from './WorkExperienceForm';
+import EducationForm from './EducationForm';
 
 class CVForm extends Component {
 	render() {
@@ -9,6 +10,7 @@ class CVForm extends Component {
 			<div>
 				<PersonalDetailsForm />
 				<WorkExperienceForm />
+				<EducationForm />
 			</div>
 		);
 	}
