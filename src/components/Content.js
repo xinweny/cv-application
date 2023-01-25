@@ -40,12 +40,12 @@ class Content extends Component {
 			],
 		}
 
-		this.addWorkSection = this.addWorkSection.bind(this);
-		this.addEducationSection = this.addEducationSection.bind(this);
+		this.addWorkExperience = this.addWorkExperience.bind(this);
+		this.addEducation = this.addEducation.bind(this);
 	}
 
-	addWorkSection() {
-		const newSection = {
+	addWorkExperience() {
+		const workExp = {
 			id: uniqid(),
 			position: '',
 			company: '',
@@ -57,12 +57,12 @@ class Content extends Component {
 
 		this.setState({
 			...this.state,
-			work: [...this.work, newSection],
+			work: [...this.work, workExp],
 		})
 	}
 
-	addEducationSection() {
-		const newSection = {
+	addEducation() {
+		const education = {
 			id: uniqid(),
 			name: '',
 			location: '',
@@ -73,15 +73,15 @@ class Content extends Component {
 
 		this.setState({
 			...this.state,
-			education: [...this.education, newSection],
+			education: [...this.education, education],
 		})
 	}
 
 	render() {
 		return (
 			<div>
-				<CVForm />
-				<CVPreview />
+				<CVForm cvInfo={this.state} handleAddWork={this.addWorkSection} handleAddEd={this.addEducationSection} />
+				<CVPreview cvInfo={this.state} />
 			</div>
 		);
 	}
