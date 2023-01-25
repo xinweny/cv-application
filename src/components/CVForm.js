@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 
+import PersonalDetailsForm from './PersonalDetailsForm';
 class CVForm extends Component {
 	render() {
 		return (
-			<div></div>
+			<div>
+				<PersonalDetailsForm />
+			</div>
 		);
 	}
 }
