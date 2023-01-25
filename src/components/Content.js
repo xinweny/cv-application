@@ -3,7 +3,6 @@ import uniqid from 'uniqid';
 
 import CVForm from './CVForm';
 import CVPreview from './CVPreview';
-import DeleteSectionButton from './DeleteSectionButton';
 
 class Content extends Component {
 	constructor(props) {
