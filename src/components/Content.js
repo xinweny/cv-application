@@ -6,6 +6,19 @@ import CVPreview from './CVPreview';
 class Content extends Component {
 	constructor(props) {
 		super(props);
+
+		this.state = {
+			personalDetails: {
+				name: '',
+				title: '',
+				address: '',
+				email: '',
+				tel: '',
+				description: '',
+			},
+			workExperience: [],
+			education: [],
+		}
 	}
 
 	render() {
