@@ -7,10 +7,8 @@ class WorkExperienceForm extends Component {
 				<input type="text" placeholder="Position"/>
 				<input type="text" placeholder="Company"/>
 				<input type="text" placeholder="Location"/>
-				<label htmlFor="from">From</label>
-				<input name="from" type="date"/>
-				<label htmlFor="to">To</label>
-				<input name="to" type="date"/>
+				<input type="text" placeholder="From"/>
+				<input type="text" placeholder="To"/>
 				<textarea cols="30" rows="3" placeholder="Job roles"></textarea>
 			</form>
 		);
