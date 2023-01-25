@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 import CVForm from './CVForm';
 import CVPreview from './CVPreview';

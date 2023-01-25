@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 import PersonalDetailsForm from './PersonalDetailsForm';
 class CVForm extends Component {
