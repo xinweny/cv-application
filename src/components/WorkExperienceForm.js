@@ -3,22 +3,21 @@ import { Component } from 'react';
 import DeleteSectionButton from './DeleteSectionButton';
 
 class WorkExperienceForm extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
+		const { id, handleChange } = this.props;
+		const section = 'work';
+
 		return (
 			<div>
 				<form className="work-experience-form">
-					<input type="text" placeholder="Position"/>
-					<input type="text" placeholder="Company"/>
-					<input type="text" placeholder="Location"/>
-					<input type="text" placeholder="From"/>
-					<input type="text" placeholder="To"/>
-					<textarea cols="30" rows="3" placeholder="Job roles"></textarea>
+					<input type="text" placeholder="Position" onChange={e => handleChange(section, id, 'position', e.target.value)} />
+					<input type="text" placeholder="Company" onChange={e => handleChange(section, id, 'company', e.target.value)} />
+					<input type="text" placeholder="Location" onChange={e => handleChange(section, id, 'location', e.target.value)} />
+					<input type="text" placeholder="From" onChange={e => handleChange(section, id, 'from', e.target.value)} />
+					<input type="text" placeholder="To" onChange={e => handleChange(section, id, 'to', e.target.value)} />
+					<textarea cols="30" rows="3" placeholder="Job roles" onChange={e => handleChange(section, id, 'description', e.target.value)} ></textarea>
 				</form>
-				<DeleteSectionButton section='work' id={this.props.id} handleClick={this.props.handleBtnClick} />
+				<DeleteSectionButton section={section} id={id} handleClick={this.props.handleBtnClick} />
 			</div>
 		);
 	}

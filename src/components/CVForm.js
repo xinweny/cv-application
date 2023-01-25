@@ -17,7 +17,7 @@ class CVForm extends Component {
 					<h3>Work Experience</h3>
 					<div>
 						{this.props.cvInfo.work.map(work => 
-							<WorkExperienceForm key={work.id} id={work.id} handleBtnClick={this.props.deleteSection} />
+							<WorkExperienceForm key={work.id} id={work.id} handleBtnClick={this.props.deleteSection} handleChange={this.props.updateSection} />
 						)}
 					</div>
 					<AddSectionButton handleClick={this.props.addWork} />
@@ -26,7 +26,7 @@ class CVForm extends Component {
 					<h3>Education</h3>
 					<div>
 						{this.props.cvInfo.education.map(ed => 
-							<EducationForm key={ed.id} id={ed.id} handleBtnClick={this.props.deleteSection} />
+							<EducationForm key={ed.id} id={ed.id} handleBtnClick={this.props.deleteSection} handleChange={this.props.updateSection} />
 						)}
 					</div>
 					<AddSectionButton handleClick={this.props.addEd} />
