@@ -3,6 +3,7 @@ import { Component } from 'react';
 import PersonalDetailsForm from './PersonalDetailsForm';
 import WorkExperienceForm from './WorkExperienceForm';
 import EducationForm from './EducationForm';
+import AddSectionButton from './AddSectionButton';
 
 class CVForm extends Component {
 	render() {
@@ -14,11 +15,17 @@ class CVForm extends Component {
 				</div>
 				<div>
 					<h3>Work Experience</h3>
-					<WorkExperienceForm />
+					<div>
+						<WorkExperienceForm />
+					</div>
+					<AddSectionButton />
 				</div>
 				<div>
 					<h3>Education</h3>
-					<EducationForm />
+					<div>
+						<EducationForm />
+					</div>
+					<AddSectionButton />
 				</div>
 			</div>
 		);
