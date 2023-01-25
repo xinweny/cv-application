@@ -36,6 +36,7 @@ class Content extends Component {
 					cert: '',
 					from: '',
 					to: '',
+					description: '',
 				}
 			],
 		}
@@ -71,6 +72,7 @@ class Content extends Component {
 			cert: '',
 			from: '',
 			to: '',
+			description: '',
 		}
 
 		this.setState({
