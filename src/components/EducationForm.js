@@ -14,7 +14,7 @@ class EducationForm extends Component {
 					<input type="text" placeholder="To"/>
 					<textarea cols="30" rows="3" placeholder="Description"></textarea>
 				</form>
-				<DeleteSectionButton />
+				<DeleteSectionButton section='education' id={this.props.id} handleClick={this.props.handleBtnClick} />
 			</div>
 		);
 	}

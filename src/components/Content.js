@@ -3,6 +3,7 @@ import uniqid from 'uniqid';
 
 import CVForm from './CVForm';
 import CVPreview from './CVPreview';
+import DeleteSectionButton from './DeleteSectionButton';
 
 class Content extends Component {
 	constructor(props) {
@@ -42,6 +43,7 @@ class Content extends Component {
 
 		this.addWorkExperience = this.addWorkExperience.bind(this);
 		this.addEducation = this.addEducation.bind(this);
+		this.deleteSection = this.deleteSection.bind(this);
 	}
 
 	addWorkExperience() {
@@ -77,10 +79,17 @@ class Content extends Component {
 		})
 	}
 
+	deleteSection(section, id) {
+		const newState = {...this.state};
+		newState[section] = newState[section].filter(info => info.id !== id);
+
+		this.setState(newState);
+	}
+
 	render() {
 		return (
 			<div>
-				<CVForm cvInfo={this.state} addWork={this.addWorkExperience} addEd={this.addEducation} />
+				<CVForm cvInfo={this.state} addWork={this.addWorkExperience} addEd={this.addEducation} deleteSection={this.deleteSection} />
 				<CVPreview cvInfo={this.state} />
 			</div>
 		);
