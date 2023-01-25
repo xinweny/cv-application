@@ -9,7 +9,7 @@ class PersonalDetailsForm extends Component {
 				<input type="text" placeholder="Address"/>
 				<input type="text" placeholder="Email address"/>
 				<input type="tel" placeholder="Phone number"/>
-				<textarea name="description" id="" cols="30" rows="10" placeholder="Description"></textarea>
+				<textarea name="description" id="" cols="30" rows="3" placeholder="Description"></textarea>
 			</form>
 		);
 	}

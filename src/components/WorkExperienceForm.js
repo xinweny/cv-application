@@ -11,7 +11,7 @@ class WorkExperienceForm extends Component {
 				<input name="from" type="date"/>
 				<label htmlFor="to">To</label>
 				<input name="to" type="date"/>
-				<textarea cols="30" rows="10" placeholder="Job roles"></textarea>
+				<textarea cols="30" rows="3" placeholder="Job roles"></textarea>
 			</form>
 		);
 	}
