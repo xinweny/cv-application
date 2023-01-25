@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import uniqid from 'uniqid';
 
 import CVForm from './CVForm';
 import CVPreview from './CVPreview';
@@ -18,6 +19,7 @@ class Content extends Component {
 			},
 			work: [
 				{
+					id: uniqid(),
 					position: '',
 					company: '',
 					location: '',
@@ -28,6 +30,7 @@ class Content extends Component {
 			],
 			education: [
 				{
+					id: uniqid(),
 					name: '',
 					location: '',
 					cert: '',
@@ -36,6 +39,39 @@ class Content extends Component {
 				}
 			],
 		}
+	}
+
+	addWorkSection() {
+		const newSection = {
+			id: uniqid(),
+			position: '',
+			company: '',
+			location: '',
+			from: '',
+			to: '',
+			description: '',
+		}
+
+		this.setState({
+			...this.state,
+			work: [...this.work, newSection],
+		})
+	}
+
+	addEducationSection() {
+		const newSection = {
+			id: uniqid(),
+			name: '',
+			location: '',
+			cert: '',
+			from: '',
+			to: '',
+		}
+
+		this.setState({
+			...this.state,
+			education: [...this.education, newSection],
+		})
 	}
 
 	render() {
