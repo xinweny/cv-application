@@ -2,21 +2,23 @@ import { Component } from 'react';
 
 class PersonalDetailsPreview extends Component {
 	render() {
+		const { info } = this.props;
+
 		return (
 			<div>
 				<div>
 					<div>
-						<h2>Full name</h2>
-						<p>Job title</p>
+						<h2>{info.name}</h2>
+						<p>{info.title}</p>
 					</div>
 					<div>
-						<p>Email address</p>
-						<p>Phone number</p>
-						<p>Address</p>
+						<p>{info.email}</p>
+						<p>{info.tel}</p>
+						<p>{info.address}</p>
 					</div>
 				</div>
 				<div>
-					<p>Description</p>
+					<p>{info.description}</p>
 				</div>
 			</div>
 		);

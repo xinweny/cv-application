@@ -2,18 +2,20 @@ import { Component } from 'react';
 
 class WorkExperiencePreview extends Component {
 	render() {
+		const { info } = this.props;
+
 		return (
 			<div>
 				<div>
 					<div>
-						<p>Position</p>
-						<p>Company</p>
-						<p>Location</p>
+						<p>{info.position}</p>
+						<p>{info.company}</p>
+						<p>{info.location}</p>
 					</div>
-					<p>From - To</p>
+					<p>{info.from} - {info.to}</p>
 				</div>
 				<div>
-					<p>Description</p>
+					<p>{info.description}</p>
 				</div>
 			</div>
 		);

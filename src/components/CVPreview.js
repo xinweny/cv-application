@@ -8,14 +8,18 @@ class CVPreview extends Component {
 	render() {
 		return (
 			<div>
-				<PersonalDetailsPreview />
+				<PersonalDetailsPreview info={this.props.cvInfo.personal} />
 				<div>
 					<h3>Work Experience</h3>
-					<WorkExperiencePreview />
+					{this.props.cvInfo.work.map(work =>
+						<WorkExperiencePreview key={work.id} info={work} />
+					)}
 				</div>
 				<div>
 					<h3>Education</h3>
-					<EducationPreview />
+					{this.props.cvInfo.education.map(ed =>
+						<EducationPreview key={ed.id} info={ed} />
+					)}
 				</div>
 			</div>
 		);
