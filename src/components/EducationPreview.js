@@ -11,7 +11,10 @@ class EducationPreview extends Component {
 						<p>{info.name}</p>
 						<p>{info.location}</p>
 					</div>
-					<p>{info.from} - {info.to}</p>
+					<div>
+						<p>{info.cert}</p>
+						<p>{info.from} - {info.to}</p>
+					</div>
 				</div>
 				<div>
 					<p>{info.description}</p>

@@ -11,7 +11,7 @@ class CVPreview extends Component {
 		const { cvInfo } = this.props; 
 
 		return (
-			<div>
+			<div className="cv-preview">
 				<PersonalDetailsPreview info={cvInfo.personal} />
 				<div>
 					<h3>Work Experience</h3>

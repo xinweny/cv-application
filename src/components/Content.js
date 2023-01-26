@@ -12,33 +12,33 @@ class Content extends Component {
 
 		this.state = {
 			personal: {
-				name: '',
-				title: '',
-				address: '',
-				email: '',
-				tel: '',
-				description: '',
+				name: 'James Pond',
+				title: 'Fullstack Web Developer',
+				address: '123 Sun Rd, Toronto, ON A1B 2C3 Canada',
+				email: 'jamespond123@gmail.com',
+				tel: '(012) 345-6789',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			},
 			work: [
 				{
 					id: uniqid(),
-					position: '',
-					company: '',
-					location: '',
-					from: '',
-					to: '',
-					description: '',
+					position: 'Junior Web Developer',
+					company: 'Pear Inc.',
+					location: 'Toronto, Canada',
+					from: '2020',
+					to: 'Present',
+					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 				}
 			],
 			education: [
 				{
 					id: uniqid(),
-					name: '',
-					location: '',
-					cert: '',
-					from: '',
-					to: '',
-					description: '',
+					name: 'King\'s University',
+					location: 'Kingston, Canada',
+					cert: 'Computer Science (Bachelors)',
+					from: '2017',
+					to: '2020',
+					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 				}
 			],
 		}
