@@ -1,4 +1,33 @@
+.cv-form {
+	padding: 16px;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	gap: 16px;
+}
+
+.form-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	gap: 4px;
+}
+
+input {
+	padding: 4px;
+}
+
+textarea {
+	padding: 4px;
+}
+
+button {
+	border: none;
+	background-color: white;
 }

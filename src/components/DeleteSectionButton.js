@@ -1,10 +1,12 @@
 import { Component } from 'react';
 
+import '../styles/DeleteSectionButton.css';
+
 class DeleteSectionButton extends Component {
 
 	render() {
 		return (
-			<button onClick={() => this.props.handleClick(this.props.section, this.props.id)}>x</button>
+			<button className="delete-button" onClick={() => this.props.handleClick(this.props.section, this.props.id)}>x</button>
 		);
 	}
 }
