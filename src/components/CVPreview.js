@@ -4,6 +4,8 @@ import PersonalDetailsPreview from './PersonalDetailsPreview';
 import WorkExperiencePreview from './WorkExperiencePreview';
 import EducationPreview from './EducationPreview';
 
+import '../styles/CVPreview.css';
+
 class CVPreview extends Component {
 	render() {
 		const { cvInfo } = this.props; 
