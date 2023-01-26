@@ -3,6 +3,9 @@
 	display: grid;
 	grid-template-rows: repeat(3, auto);
 	gap: 16px;
+	flex-grow: 1;
+	align-content: start;
+	background-color: rgb(202, 237, 237);
 }
 
 .form-header {
@@ -26,14 +29,27 @@ form {
 }
 
 input {
-	padding: 4px;
+	border: none;
+	border-radius: 8px;
+	padding: 4px 4px 4px 8px;
 }
 
 textarea {
-	padding: 4px;
+	border: none;
+	border-radius: 8px;
+	padding: 4px 4px 4px 8px;
 }
 
 button {
 	border: none;
 	background-color: white;
+}
+
+.input-same-line {
+	display: flex;
+	gap: 4px;
+}
+
+.input-same-line input {
+	flex-grow: 1;
 }

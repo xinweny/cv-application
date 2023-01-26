@@ -1,5 +1,6 @@
 .content {
+	flex: 1 1 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 8px;
+	background-color: rgb(231, 231, 231);
 }

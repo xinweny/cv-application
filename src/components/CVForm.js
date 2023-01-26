@@ -9,6 +9,12 @@ import '../styles/CVForm.css';
 
 class CVForm extends Component {
 	render() {
+		const { 
+			cvInfo,
+			updateSection,
+			deleteSection,
+		} = this.props;
+
 		return (
 			<div className="cv-form">
 				<div className="cv-section">
@@ -23,8 +29,8 @@ class CVForm extends Component {
 						<AddSectionButton handleClick={this.props.addWork} />
 					</div>
 					<div className="form-sections">
-						{this.props.cvInfo.work.map(work => 
-							<WorkExperienceForm key={work.id} id={work.id} handleBtnClick={this.props.deleteSection} handleChange={this.props.updateSection} />
+						{cvInfo.work.map(work => 
+							<WorkExperienceForm key={work.id} id={work.id} handleBtnClick={deleteSection} handleChange={updateSection} />
 						)}
 					</div>
 				</div>
@@ -34,8 +40,8 @@ class CVForm extends Component {
 						<AddSectionButton handleClick={this.props.addEd} />
 					</div>
 					<div className="form-sections">
-						{this.props.cvInfo.education.map(ed => 
-							<EducationForm key={ed.id} id={ed.id} handleBtnClick={this.props.deleteSection} handleChange={this.props.updateSection} />
+						{cvInfo.education.map(ed => 
+							<EducationForm key={ed.id} id={ed.id} handleBtnClick={deleteSection} handleChange={updateSection} />
 						)}
 					</div>
 				</div>
