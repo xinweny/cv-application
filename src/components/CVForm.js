@@ -5,6 +5,8 @@ import WorkExperienceForm from './WorkExperienceForm';
 import EducationForm from './EducationForm';
 import AddSectionButton from './AddSectionButton';
 
+import '../styles/CVForm.css';
+
 class CVForm extends Component {
 	render() {
 		return (

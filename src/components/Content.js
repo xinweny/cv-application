@@ -4,6 +4,8 @@ import uniqid from 'uniqid';
 import CVForm from './CVForm';
 import CVPreview from './CVPreview';
 
+import '../styles/Content.css';
+
 class Content extends Component {
 	constructor(props) {
 		super(props);
@@ -109,7 +111,7 @@ class Content extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="content">
 				<CVForm cvInfo={this.state} addWork={this.addWorkExperience} addEd={this.addEducation} deleteSection={this.deleteSection} updateSection={this.updateSection} updatePersonal={this.updatePersonalDetails} />
 				<CVPreview cvInfo={this.state} />
 			</div>
