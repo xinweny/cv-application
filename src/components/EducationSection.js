@@ -15,20 +15,20 @@ class EducationSection extends Component {
 			<div>
 				<div>
 					<div>
-						<CVField clsName="ed-name" value={ed.name} handleChange={this.bindArgs('name')} />
-						<CVField clsName="ed-location" value={ed.location} handleChange={this.bindArgs('location')} />
+						<CVField clsName="ed-name" value={ed.name} handleChange={this.bindArgs('name')} placeholder="Institution" />
+						<CVField clsName="ed-location" value={ed.location} handleChange={this.bindArgs('location')} placeholder="Location" />
 					</div>
 					<div>
-					<CVField clsName="ed-cert" value={ed.cert} handleChange={this.bindArgs('cert')} />
+					<CVField clsName="ed-cert" value={ed.cert} handleChange={this.bindArgs('cert')} placeholder="Certification" />
 						<div>
-							<CVField clsName="ed-from" value={ed.from} handleChange={this.bindArgs('from')} />
+							<CVField clsName="ed-from" value={ed.from} handleChange={this.bindArgs('from')} placeholder="From" />
 							<p>-</p>
-							<CVField clsName="ed-to" value={ed.to} handleChange={this.bindArgs('to')} />
+							<CVField clsName="ed-to" value={ed.to} handleChange={this.bindArgs('to')} placeholder="To" />
 						</div>
 					</div>
 				</div>
 				<div>
-				<CVField clsName="ed-description" value={ed.description} handleChange={this.bindArgs('cert')} rows="3" cols="30"/>
+				<CVField clsName="ed-description" value={ed.description} handleChange={this.bindArgs('cert')} isTextArea={true} placeholder="Description" />
 				</div>
 				<DeleteSectionButton section='education' id={ed.id} handleClick={handleBtnClick} />
 			</div>

@@ -5,14 +5,14 @@ class CVField extends Component {
 		super(props);
 
 		this.state = {
-			showInput: false,
+			showInput: this.props.value === '',
 		}
 
 		this.toggleInput = this.toggleInput.bind(this);
 	}
 
-	toggleInput() {
-		this.setState({ showInput: !this.state.showInput });
+	toggleInput(event) {
+		if (event.target.value !== '') this.setState({ showInput: !this.state.showInput });
 	}
 
 	render() {
@@ -21,10 +21,10 @@ class CVField extends Component {
 		if (this.state.showInput) {
 			const inputCls = `input-${p.clsName}`;
 
-			if (p.cols !== undefined && p.rows !== undefined) {
-				return <textarea className={inputCls} cols={p.cols} rows={p.rows} value={p.value} onChange={p.handleChange} onBlur={this.toggleInput} autoFocus />
+			if (p.isTextArea) {
+				return <textarea className={inputCls} value={p.value} onChange={p.handleChange} onBlur={this.toggleInput} placeholder={p.placeholder} autoFocus />
 			} else {
-				return <input className={inputCls} type="text" value={p.value} onChange={p.handleChange} onBlur={this.toggleInput} autoFocus/>
+				return <input className={inputCls} type="text" value={p.value} onChange={p.handleChange} onBlur={this.toggleInput} placeholder={p.placeholder} autoFocus />
 			}
 		}
 

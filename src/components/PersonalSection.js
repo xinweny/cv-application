@@ -14,17 +14,17 @@ class PersonalSection extends Component {
 			<div>
 				<div>
 					<div>
-						<CVField clsName="personal-name" value={info.name} handleChange={this.bindArgs('name')} />
-						<CVField clsName="personal-title" value={info.title} handleChange={this.bindArgs('title')} />
+						<CVField clsName="personal-name" value={info.name} handleChange={this.bindArgs('name')} placeholder="Full name" />
+						<CVField clsName="personal-title" value={info.title} handleChange={this.bindArgs('title')} placeholder="Professional title" />
 					</div>
 					<div className="contact-details">
-						<CVField clsName="personal-email" value={info.email} handleChange={this.bindArgs('email')} />
-						<CVField clsName="personal-tel" value={info.tel} handleChange={this.bindArgs('tel')} />
-						<CVField clsName="personal-address" value={info.address} handleChange={this.bindArgs('address')} />
+						<CVField clsName="personal-email" value={info.email} handleChange={this.bindArgs('email')} placeholder="Email"/>
+						<CVField clsName="personal-tel" value={info.tel} handleChange={this.bindArgs('tel')} placeholder="Tel no." />
+						<CVField clsName="personal-address" value={info.address} handleChange={this.bindArgs('address')} placeholder="Home address" />
 					</div>
 				</div>
 				<div>
-					<CVField clsName="personal-description" value={info.description} handleChange={this.bindArgs('description')} />
+					<CVField clsName="personal-description" value={info.description} handleChange={this.bindArgs('description')} isTextArea={true} placeholder="Personal summary" />
 				</div>
 			</div>
 		);

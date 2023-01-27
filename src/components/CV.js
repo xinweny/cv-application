@@ -4,6 +4,7 @@ import uniqid from 'uniqid';
 import PersonalSection from './PersonalSection';
 import WorkExperienceSection from './WorkExperienceSection';
 import EducationSection from './EducationSection';
+import SkillsSection from './SkillsSection';
 import AddSectionButton from './AddSectionButton';
 
 import '../styles/CV.css';
@@ -14,10 +15,10 @@ class CV extends Component {
 
 		this.state = {
 			personal: {
-				name: 'James Pond',
-				title: 'Fullstack Web Developer',
-				address: '123 Sun Rd, Toronto, ON A1B 2C3 Canada',
-				email: 'jamespond123@gmail.com',
+				name: 'Full Name',
+				title: 'Professional Title',
+				address: '123 Example Rd, Toronto, Canada',
+				email: 'example123@gmail.com',
 				tel: '(012) 345-6789',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			},
@@ -48,11 +49,12 @@ class CV extends Component {
 					id: uniqid(),
 					skill: 'JavaScript',
 				}
-			]
+			],
 		}
 
 		this.addWorkExperience = this.addWorkExperience.bind(this);
 		this.addEducation = this.addEducation.bind(this);
+		this.addSkill = this.addSkill.bind(this);
 		this.deleteSection = this.deleteSection.bind(this);
 		this.updateSection = this.updateSection.bind(this);
 		this.updatePersonalDetails = this.updatePersonalDetails.bind(this);
@@ -92,6 +94,18 @@ class CV extends Component {
 		})
 	}
 
+	addSkill() {
+		const skill = {
+			id: uniqid(),
+			skill: '',
+		}
+
+		this.setState({
+			...this.state,
+			skills: [...this.state.skills, skill],
+		})
+	}
+
 	deleteSection(section, id) {
 		const newState = {...this.state};
 		newState[section] = newState[section].filter(info => info.id !== id);
@@ -121,7 +135,18 @@ class CV extends Component {
 		return (
 			<div className="cv">
 				<PersonalSection info={this.state.personal} handleChange={this.updatePersonalDetails} />
-				<div>
+				<div className="cv-skills">
+					<div>
+						<h3>Skills</h3>
+						<AddSectionButton handleClick={this.addSkill} />
+					</div>
+					<div>
+						{this.state.skills.map(skill =>
+							<SkillsSection key={skill.id} skill={skill} handleChange={this.updateSection} handleBtnClick={this.deleteSection} />
+						)}
+					</div>
+				</div>
+				<div className="cv-work">
 					<div>
 						<h3>Work Experience</h3>
 						<AddSectionButton handleClick={this.addWorkExperience} />
@@ -132,10 +157,10 @@ class CV extends Component {
 						)}
 					</div>
 				</div>
-				<div>
+				<div className="cv-education">
 					<div>
 						<h3>Education</h3>
-						<AddSectionButton handleClick={this.addWorkExperience} />
+						<AddSectionButton handleClick={this.addEducation} />
 					</div>
 					<div>
 						{this.state.education.map(ed =>

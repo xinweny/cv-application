@@ -15,18 +15,18 @@ class WorkExperienceSection extends Component {
 			<div>
 				<div>
 					<div>
-						<CVField clsName="work-position" value={work.position} handleChange={this.bindArgs('position')} />
-						<CVField clsName="work-company" value={work.company} handleChange={this.bindArgs('company')} />
-						<CVField clsName="work-location" value={work.location} handleChange={this.bindArgs('location')} />
+						<CVField clsName="work-position" value={work.position} handleChange={this.bindArgs('position')} placeholder="Job title" />
+						<CVField clsName="work-company" value={work.company} handleChange={this.bindArgs('company')} placeholder="Company name" />
+						<CVField clsName="work-location" value={work.location} handleChange={this.bindArgs('location')} placeholder="Location" />
 					</div>
 					<div>
-						<CVField clsName="work-from" value={work.from} handleChange={this.bindArgs('from')} />
+						<CVField clsName="work-from" value={work.from} handleChange={this.bindArgs('from')} placeholder="From" />
 						<p>-</p>
-						<CVField clsName="work-to" value={work.to} handleChange={this.bindArgs('to')} />
+						<CVField clsName="work-to" value={work.to} handleChange={this.bindArgs('to')} placeholder="To" />
 					</div>
 				</div>
 				<div>
-					<CVField clsName="work-description" value={work.description} handleChange={this.bindArgs('description')} rows="3" cols="30" />
+					<CVField clsName="work-description" value={work.description} handleChange={this.bindArgs('description')} isTextArea={true} placeholder="Job roles and responsibilities" />
 				</div>
 				<DeleteSectionButton section="work" id={work.id} handleClick={handleBtnClick} />
 			</div>
