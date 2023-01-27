@@ -12,23 +12,19 @@ class EducationSection extends Component {
 		const { ed, handleBtnClick } = this.props;
 
 		return (
-			<div>
+			<div className="education-section">
 				<div>
 					<div>
 						<CVField clsName="ed-name" value={ed.name} handleChange={this.bindArgs('name')} placeholder="Institution" />
 						<CVField clsName="ed-location" value={ed.location} handleChange={this.bindArgs('location')} placeholder="Location" />
-					</div>
-					<div>
-					<CVField clsName="ed-cert" value={ed.cert} handleChange={this.bindArgs('cert')} placeholder="Certification" />
+						<CVField clsName="ed-cert" value={ed.cert} handleChange={this.bindArgs('cert')} placeholder="Certification" />
 						<div>
 							<CVField clsName="ed-from" value={ed.from} handleChange={this.bindArgs('from')} placeholder="From" />
 							<p>-</p>
 							<CVField clsName="ed-to" value={ed.to} handleChange={this.bindArgs('to')} placeholder="To" />
 						</div>
+						<CVField clsName="ed-description" value={ed.description} handleChange={this.bindArgs('cert')} isTextArea={true} placeholder="Description" />
 					</div>
-				</div>
-				<div>
-				<CVField clsName="ed-description" value={ed.description} handleChange={this.bindArgs('cert')} isTextArea={true} placeholder="Description" />
 				</div>
 				<DeleteSectionButton section='education' id={ed.id} handleClick={handleBtnClick} />
 			</div>

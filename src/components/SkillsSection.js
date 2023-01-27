@@ -8,7 +8,7 @@ class SkillsSection extends Component {
 		const { skill, handleBtnClick, handleChange } = this.props;
 
 		return (
-			<div>
+			<div className="skills-section">
 				<CVField clsName="skill-name" value={skill.skill} handleChange={e => handleChange('skills', skill.id, 'skill', e.target.value)} />
 				<DeleteSectionButton section='skills' id={skill.id} handleClick={handleBtnClick}/>
 			</div>

@@ -11,7 +11,7 @@ class PersonalSection extends Component {
 		const { info } = this.props;
 
 		return (
-			<div>
+			<div className="personal-section">
 				<div>
 					<div>
 						<CVField clsName="personal-name" value={info.name} handleChange={this.bindArgs('name')} placeholder="Full name" />
@@ -23,9 +23,7 @@ class PersonalSection extends Component {
 						<CVField clsName="personal-address" value={info.address} handleChange={this.bindArgs('address')} placeholder="Home address" />
 					</div>
 				</div>
-				<div>
-					<CVField clsName="personal-description" value={info.description} handleChange={this.bindArgs('description')} isTextArea={true} placeholder="Personal summary" />
-				</div>
+				<CVField clsName="personal-description" value={info.description} handleChange={this.bindArgs('description')} isTextArea={true} placeholder="Personal summary" />
 			</div>
 		);
 	}
