@@ -4,6 +4,7 @@ import uniqid from 'uniqid';
 import PersonalSection from './PersonalSection';
 import WorkExperienceSection from './WorkExperienceSection';
 import EducationSection from './EducationSection';
+import AddSectionButton from './AddSectionButton';
 
 import '../styles/CV.css';
 
@@ -121,7 +122,10 @@ class CV extends Component {
 			<div className="cv-preview">
 				<PersonalSection info={this.state.personal} handleChange={this.updatePersonalDetails} />
 				<div>
-					<h3>Work Experience</h3>
+					<div>
+						<h3>Work Experience</h3>
+						<AddSectionButton handleClick={this.addWorkExperience} />
+					</div>
 					<div>
 						{this.state.work.map(work =>
 							<WorkExperienceSection key={work.id} work={work} handleChange={this.updateSection} handleBtnClick={this.deleteSection} />
@@ -129,7 +133,10 @@ class CV extends Component {
 					</div>
 				</div>
 				<div>
-					<h3>Education</h3>
+					<div>
+						<h3>Education</h3>
+						<AddSectionButton handleClick={this.addWorkExperience} />
+					</div>
 					<div>
 						{this.state.education.map(ed =>
 							<EducationSection key={ed.id} ed={ed} handleChange={this.updateSection} handleBtnClick={this.deleteSection} />
