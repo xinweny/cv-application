@@ -1,6 +1,12 @@
 import { Component } from 'react';
 
+import CVField from './CVField';
+
 class PersonalSection extends Component {
+	bindArgs(field) {
+		return (e => this.props.handleChange(field, e.target.value));
+	}
+
 	render() {
 		const { info } = this.props;
 
@@ -8,17 +14,17 @@ class PersonalSection extends Component {
 			<div>
 				<div>
 					<div>
-						<h2>{info.name}</h2>
-						<p>{info.title}</p>
+						<CVField clsName="personal-name" value={info.name} handleChange={this.bindArgs('name')} />
+						<CVField clsName="personal-title" value={info.title} handleChange={this.bindArgs('title')} />
 					</div>
-					<div>
-						<p>{info.email}</p>
-						<p>{info.tel}</p>
-						<p>{info.address}</p>
+					<div className="contact-details">
+						<CVField clsName="personal-email" value={info.email} handleChange={this.bindArgs('email')} />
+						<CVField clsName="personal-tel" value={info.tel} handleChange={this.bindArgs('tel')} />
+						<CVField clsName="personal-address" value={info.address} handleChange={this.bindArgs('address')} />
 					</div>
 				</div>
 				<div>
-					<p>{info.description}</p>
+					<CVField clsName="personal-description" value={info.description} handleChange={this.bindArgs('description')} />
 				</div>
 			</div>
 		);
