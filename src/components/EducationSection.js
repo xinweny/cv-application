@@ -20,7 +20,7 @@ class EducationSection extends Component {
 						<CVField clsName="ed-name" value={ed.name} handleChange={this.bindArgs('name')} placeholder="Institution" />
 						<CVField clsName="ed-location" value={ed.location} handleChange={this.bindArgs('location')} placeholder="Location" />
 						<CVField clsName="ed-cert" value={ed.cert} handleChange={this.bindArgs('cert')} placeholder="Certification" />
-						<div>
+						<div className="from-to">
 							<CVField clsName="ed-from" value={ed.from} handleChange={this.bindArgs('from')} placeholder="From" />
 							<p>-</p>
 							<CVField clsName="ed-to" value={ed.to} handleChange={this.bindArgs('to')} placeholder="To" />

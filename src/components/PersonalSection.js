@@ -23,6 +23,7 @@ class PersonalSection extends Component {
 						<CVField clsName="personal-email" value={info.email} handleChange={this.bindArgs('email')} placeholder="Email"/>
 						<CVField clsName="personal-tel" value={info.tel} handleChange={this.bindArgs('tel')} placeholder="Tel no." />
 						<CVField clsName="personal-address" value={info.address} handleChange={this.bindArgs('address')} placeholder="Home address" />
+						<CVField clsName="personal-website" value={info.website} handleChange={this.bindArgs('website')} placeholder="Website URL" />
 					</div>
 				</div>
 				<CVField clsName="personal-description" value={info.description} handleChange={this.bindArgs('description')} isTextArea={true} placeholder="Personal summary" />

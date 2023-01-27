@@ -20,6 +20,7 @@ class CV extends Component {
 				address: '123 Example Rd, Toronto, Canada',
 				email: 'example123@gmail.com',
 				tel: '(012) 345-6789',
+				website: 'https://example.linkedin.com',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			},
 			work: [
