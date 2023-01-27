@@ -119,7 +119,7 @@ class CV extends Component {
 
 	render() {
 		return (
-			<div className="cv-preview">
+			<div className="cv">
 				<PersonalSection info={this.state.personal} handleChange={this.updatePersonalDetails} />
 				<div>
 					<div>
