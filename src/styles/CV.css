@@ -10,8 +10,17 @@
 	gap: 8px;
 }
 
+.section-header h3 {
+	font-size: 1.3vw;
+}
+
 .section:hover button {
 	display: block;
+}
+
+.from-to {
+	display: flex;
+	gap: 4px;
 }
 
 @media print {

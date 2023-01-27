@@ -17,7 +17,7 @@ class CV extends Component {
 			personal: {
 				name: 'Full Name',
 				title: 'Professional Title',
-				address: '123 Example Rd, Toronto, Canada',
+				address: '123 Example Rd, Toronto',
 				email: 'example123@gmail.com',
 				tel: '(012) 345-6789',
 				website: 'https://example.linkedin.com',

@@ -1,0 +1,21 @@
+.personal-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.personal-name {
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+.personal-title {
+	font-size: 1.2vw;
+}
+
+.contact-details p {
+	font-size: 0.6vw;
+}
+
+.personal-description {
+	font-size: 0.8vw;
+}

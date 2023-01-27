@@ -14,15 +14,15 @@ class PersonalSection extends Component {
 
 		return (
 			<div className="personal-section">
-				<div>
-					<div>
+				<div className="personal-header">
+					<div className="personal-name-title">
 						<CVField clsName="personal-name" value={info.name} handleChange={this.bindArgs('name')} placeholder="Full name" />
 						<CVField clsName="personal-title" value={info.title} handleChange={this.bindArgs('title')} placeholder="Professional title" />
 					</div>
 					<div className="contact-details">
-						<CVField clsName="personal-email" value={info.email} handleChange={this.bindArgs('email')} placeholder="Email"/>
 						<CVField clsName="personal-tel" value={info.tel} handleChange={this.bindArgs('tel')} placeholder="Tel no." />
 						<CVField clsName="personal-address" value={info.address} handleChange={this.bindArgs('address')} placeholder="Home address" />
+						<CVField clsName="personal-email" value={info.email} handleChange={this.bindArgs('email')} placeholder="Email"/>
 						<CVField clsName="personal-website" value={info.website} handleChange={this.bindArgs('website')} placeholder="Website URL" />
 					</div>
 				</div>
