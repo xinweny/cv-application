@@ -2,6 +2,8 @@ import { Component } from 'react';
 
 import CVField from './CVField';
 
+import '../styles/PersonalSection.css';
+
 class PersonalSection extends Component {
 	bindArgs(field) {
 		return (e => this.props.handleChange(field, e.target.value));

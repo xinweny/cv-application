@@ -4,6 +4,12 @@
 	background-color: white;
 }
 
+.section-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
 @media print {
   .cv {
     width: 210mm;

@@ -3,6 +3,8 @@ import { Component } from 'react';
 import CVField from './CVField';
 import DeleteSectionButton from './DeleteSectionButton';
 
+import '../styles/EducationSection.css';
+
 class EducationSection extends Component {
 	bindArgs(field) {
 		return (e => this.props.handleChange('education', this.props.ed.id, field, e.target.value));

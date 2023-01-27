@@ -3,6 +3,8 @@ import { Component } from 'react';
 import CVField from './CVField';
 import DeleteSectionButton from './DeleteSectionButton';
 
+import '../styles/SkillsSection.css';
+
 class SkillsSection extends Component {
 	render() {
 		const { skill, handleBtnClick, handleChange } = this.props;

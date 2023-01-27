@@ -3,6 +3,7 @@ import { Component } from 'react';
 import CVField from './CVField';
 import DeleteSectionButton from './DeleteSectionButton';
 
+import '../styles/WorkExperienceSection.css';
 class WorkExperienceSection extends Component {
 	bindArgs(field) {
 		return (e => this.props.handleChange('work', this.props.work.id, field, e.target.value));

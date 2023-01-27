@@ -136,7 +136,7 @@ class CV extends Component {
 			<div className="cv">
 				<PersonalSection info={this.state.personal} handleChange={this.updatePersonalDetails} />
 				<div className="cv-skills">
-					<div>
+					<div className="section-header">
 						<h3>Skills</h3>
 						<AddSectionButton handleClick={this.addSkill} />
 					</div>
@@ -147,7 +147,7 @@ class CV extends Component {
 					</div>
 				</div>
 				<div className="cv-work">
-					<div>
+					<div className="section-header">
 						<h3>Work Experience</h3>
 						<AddSectionButton handleClick={this.addWorkExperience} />
 					</div>
@@ -158,7 +158,7 @@ class CV extends Component {
 					</div>
 				</div>
 				<div className="cv-education">
-					<div>
+					<div className="section-header">
 						<h3>Education</h3>
 						<AddSectionButton handleClick={this.addEducation} />
 					</div>
