@@ -141,7 +141,7 @@ class CV extends Component {
 						<h3>Skills</h3>
 						<AddSectionButton handleClick={this.addSkill} />
 					</div>
-					<div>
+					<div className="sections skills-sections">
 						{this.state.skills.map(skill =>
 							<SkillsSection key={skill.id} skill={skill} handleChange={this.updateSection} handleBtnClick={this.deleteSection} />
 						)}
@@ -152,7 +152,7 @@ class CV extends Component {
 						<h3>Work Experience</h3>
 						<AddSectionButton handleClick={this.addWorkExperience} />
 					</div>
-					<div>
+					<div className="sections work-sections">
 						{this.state.work.map(work =>
 							<WorkExperienceSection key={work.id} work={work} handleChange={this.updateSection} handleBtnClick={this.deleteSection} />
 						)}
@@ -163,7 +163,7 @@ class CV extends Component {
 						<h3>Education</h3>
 						<AddSectionButton handleClick={this.addEducation} />
 					</div>
-					<div>
+					<div className="sections education-sections">
 						{this.state.education.map(ed =>
 							<EducationSection key={ed.id} ed={ed} handleChange={this.updateSection} handleBtnClick={this.deleteSection} />
 						)}

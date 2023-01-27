@@ -1,5 +1,7 @@
 import { Component } from 'react';
 
+import '../styles/DeleteSectionButton.css';
+
 class DeleteSectionButton extends Component {
 	render() {
 		return (

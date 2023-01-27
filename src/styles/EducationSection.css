@@ -1,0 +1,9 @@
+.education-section {
+	position: relative;
+}
+
+.education-section button {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}

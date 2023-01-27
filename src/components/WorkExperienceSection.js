@@ -13,7 +13,7 @@ class WorkExperienceSection extends Component {
 		const { work, handleBtnClick } = this.props;
 
 		return (
-			<div className="work-section">
+			<div className="work-section section">
 				<div>
 					<CVField clsName="work-position" value={work.position} handleChange={this.bindArgs('position')} placeholder="Job title" />
 					<CVField clsName="work-company" value={work.company} handleChange={this.bindArgs('company')} placeholder="Company name" />

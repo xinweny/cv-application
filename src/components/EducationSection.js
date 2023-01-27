@@ -14,7 +14,7 @@ class EducationSection extends Component {
 		const { ed, handleBtnClick } = this.props;
 
 		return (
-			<div className="education-section">
+			<div className="education-section section">
 				<div>
 					<div>
 						<CVField clsName="ed-name" value={ed.name} handleChange={this.bindArgs('name')} placeholder="Institution" />
