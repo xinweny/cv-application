@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-class EducationPreview extends Component {
+class PersonalSection extends Component {
 	render() {
 		const { info } = this.props;
 
@@ -8,12 +8,13 @@ class EducationPreview extends Component {
 			<div>
 				<div>
 					<div>
-						<p>{info.name}</p>
-						<p>{info.location}</p>
+						<h2>{info.name}</h2>
+						<p>{info.title}</p>
 					</div>
 					<div>
-						<p>{info.cert}</p>
-						<p>{info.from} - {info.to}</p>
+						<p>{info.email}</p>
+						<p>{info.tel}</p>
+						<p>{info.address}</p>
 					</div>
 				</div>
 				<div>
@@ -24,4 +25,4 @@ class EducationPreview extends Component {
 	}
 }
 
-export default EducationPreview;
+export default PersonalSection;

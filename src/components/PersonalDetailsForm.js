@@ -11,7 +11,7 @@ class PersonalDetailsForm extends Component {
 				<input type="text" placeholder="Address" onChange={e => handleChange('address', e.target.value)}/>
 				<input type="text" placeholder="Email" onChange={e => handleChange('email', e.target.value)}/>
 				<input type="tel" placeholder="Phone number" onChange={e => handleChange('tel', e.target.value)}/>
-				<textarea name="description" id="" cols="30" rows="3" placeholder="Description" onChange={e => handleChange('description', e.target.value)}></textarea>
+				<textarea name="description" id="" cols="30" rows="3" placeholder="Personal summary" onChange={e => handleChange('description', e.target.value)}></textarea>
 			</form>
 		);
 	}
