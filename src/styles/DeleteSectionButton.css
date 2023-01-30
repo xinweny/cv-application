@@ -1,5 +1,7 @@
 .delete-button {
 	display: none;
 	border: none;
+	width: 20px;
+	height: 20px;
 	background-color: transparent;
 }

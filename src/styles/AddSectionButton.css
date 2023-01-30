@@ -2,6 +2,9 @@
 	display: none;
 	border: none;
 	background-color: transparent;
-	font-weight: bold;
-	font-size: 18px;
+}
+
+.add-section-btn img {
+	width: 16px;
+	height: 16px;
 }

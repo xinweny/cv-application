@@ -12,6 +12,11 @@
 	font-size: 12px;
 }
 
+.skills-section button {
+	width: 12px;
+	height: 12px;
+}
+
 .li-wrapper {
 	display: list-item;
 }

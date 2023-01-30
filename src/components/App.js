@@ -10,8 +10,8 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <Header />
-        <Content />
+        <Header trigger={() => <button className="print-button">Print PDF</button>} content={() => this.componentRef} />
+        <Content printRef={el => this.componentRef = el} />
         <Footer />
       </div>
     );

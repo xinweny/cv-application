@@ -1,6 +1,8 @@
 .cv {
-	width: 75%;
-	padding: 24px;
+	width: 21cm;
+	min-height: 29.7cm;
+	padding: 2cm;
+	margin: 1cm auto;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -12,11 +14,6 @@
 	align-items: center;
 	gap: 8px;
 	padding-bottom: 8px;
-}
-
-.section-header button img {
-	width: 16px;
-	height: 16px;
 }
 
 .section-header:hover button {
