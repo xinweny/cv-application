@@ -1,6 +1,7 @@
 import { Component } from 'react';
 
 import CV from './CV';
+import ReactToPrint from 'react-to-print';
 
 import '../styles/Content.css';
 
@@ -8,7 +9,8 @@ class Content extends Component {
 	render() {
 		return (
 			<div className="content">
-				<CV addWork={this.addWorkExperience} addEd={this.addEducation} deleteSection={this.deleteSection} updateSection={this.updateSection} updatePersonal={this.updatePersonalDetails} />
+				<ReactToPrint trigger={() => <button className="printButton">Print PDF</button>} content={() => this.componentRef} />
+				<CV ref={el => this.componentRef = el} />
 			</div>
 		);
 	}
