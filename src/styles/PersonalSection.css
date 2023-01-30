@@ -1,11 +1,13 @@
 .personal-section {
 	display: flex;
 	flex-direction: column;
+	gap: 8px;
 }
 
 .personal-header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .personal-name {
@@ -17,8 +19,19 @@
 	font-size: 18px;
 }
 
+.contact-details {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 4px;
+}
+
 .contact-details p, .contact-details input {
 	font-size: 10px;
+}
+
+.contact-details img {
+	width: 16px;
+	height: 16px;
 }
 
 .personal-description {
