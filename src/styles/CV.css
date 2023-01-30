@@ -11,16 +11,40 @@
 }
 
 .section-header h3 {
-	font-size: 1.3vw;
+	font-size: 18px;
 }
 
 .section:hover button {
 	display: block;
 }
 
-.from-to {
+.section-content-header {
+	font-size: 12px;
+}
+
+.section-content {
+	display: flex;
+	flex-direction: column;
+}
+
+input, textarea {
+	border: none;
+	background-color: rgb(226, 243, 254);
+	padding: 4px 4px 4px 8px;
+}
+input {
+	margin-bottom: 4px;
+}
+
+.flex-gap {
 	display: flex;
 	gap: 4px;
+	align-items: center;
+}
+
+.flex-space-between {
+	display: flex;
+	justify-content: space-between;
 }
 
 @media print {

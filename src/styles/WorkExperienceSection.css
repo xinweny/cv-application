@@ -2,6 +2,18 @@
 	position: relative;
 }
 
+.work-position {
+	font-weight: bold;
+}
+
+.work-company, .work-location {
+	font-style: italic;
+}
+
+.work-description {
+	font-size: 12px;
+}
+
 .work-section button {
 	position: absolute;
 	top: 0px;

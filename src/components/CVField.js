@@ -24,12 +24,10 @@ class CVField extends Component {
 		const p = this.props;
 
 		if (this.state.showInput) {
-			const inputCls = `input-${p.clsName}`;
-
 			if (p.isTextArea) {
-				return <textarea className={inputCls} value={p.value} onChange={p.handleChange} onBlur={this.handleBlur} placeholder={p.placeholder} autoFocus />
+				return <textarea className={p.clsName} value={p.value} onChange={p.handleChange} onBlur={this.handleBlur} placeholder={p.placeholder} autoFocus />
 			} else {
-				return <input className={inputCls} type="text" value={p.value} onChange={p.handleChange} onBlur={this.handleBlur} placeholder={p.placeholder} autoFocus />
+				return <input className={p.clsName} type="text" value={p.value} onChange={p.handleChange} onBlur={this.handleBlur} placeholder={p.placeholder} autoFocus />
 			}
 		}
 

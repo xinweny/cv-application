@@ -1,15 +1,20 @@
+.personal-section {
+	display: flex;
+	flex-direction: column;
+}
+
 .personal-header {
 	display: flex;
 	justify-content: space-between;
 }
 
 .personal-name {
-	font-size: 3vw;
+	font-size: 32px;
 	font-weight: bold;
 }
 
 .personal-title {
-	font-size: 1.2vw;
+	font-size: 18px;
 }
 
 .contact-details p {
