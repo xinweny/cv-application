@@ -1,9 +1,19 @@
 .header {
 	flex: none;
-	padding: 12px 12px 12px 18px;
+	padding: 12px 18px 12px 18px;
 	background-color: #3A52EE;
 	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.print-button {
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #910000;
+	color: white;
+	padding: 12px;
+	border-radius: 12px;
 }
