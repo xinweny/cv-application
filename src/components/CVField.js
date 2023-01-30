@@ -6,6 +6,7 @@ class CVField extends Component {
 
 		this.state = {
 			showInput: this.props.value === '',
+			value: this.props.value,
 		}
 
 		this.handleBlur = this.handleBlur.bind(this);
