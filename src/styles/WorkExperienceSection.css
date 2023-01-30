@@ -1,3 +1,9 @@
+.work-sections {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
 .work-section {
 	position: relative;
 }

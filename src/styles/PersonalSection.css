@@ -17,10 +17,10 @@
 	font-size: 18px;
 }
 
-.contact-details p {
-	font-size: 0.6vw;
+.contact-details p, .contact-details input {
+	font-size: 10px;
 }
 
 .personal-description {
-	font-size: 0.8vw;
+	font-size: 12px;
 }

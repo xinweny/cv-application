@@ -1,3 +1,5 @@
 .delete-button {
 	display: none;
+	border: none;
+	background-color: transparent;
 }

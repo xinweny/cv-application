@@ -1,9 +1,11 @@
 import { Component } from 'react';
 
+import '../styles/AddSectionButton.css';
+
 class AddSectionButton extends Component {
 	render() {
 		return (
-			<button onClick={this.props.handleClick}>+</button>
+			<button className="add-section-btn" onClick={this.props.handleClick}>+</button>
 		);
 	}
 }
