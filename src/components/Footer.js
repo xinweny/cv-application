@@ -8,7 +8,9 @@ class Footer extends Component {
 		return (
 			<div className="footer">
 					<p>Made by <a href="https://github.com/xinweny">xinweny</a> in 2023</p>
-					<img src={githubLogo} alt="Github logo" />
+					<a href="https://github.com/xinweny/cv-application">
+						<img src={githubLogo} alt="Github logo" />
+					</a>
 			</div>
 		);
 	}
