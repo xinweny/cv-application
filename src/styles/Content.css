@@ -1,7 +1,18 @@
 .content {
 	display: flex;
+	flex-direction: column;
+	gap: 16px;
 	align-items: center;
 	justify-content: center;
 	background-color: rgb(231, 231, 231);
 	padding: 16px;
+}
+
+.print-button {
+	border: none;
+	font-size: 24px;
+	background-color: rgb(145, 0, 0);
+	color: white;
+	padding: 12px;
+	border-radius: 12px;
 }

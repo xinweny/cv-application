@@ -9,7 +9,7 @@ class Content extends Component {
 	render() {
 		return (
 			<div className="content">
-				<ReactToPrint trigger={() => <button className="printButton">Print PDF</button>} content={() => this.componentRef} />
+				<ReactToPrint trigger={() => <button className="print-button">Print PDF</button>} content={() => this.componentRef} />
 				<CV ref={el => this.componentRef = el} />
 			</div>
 		);
