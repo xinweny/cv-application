@@ -15,13 +15,13 @@ class CV extends Component {
 
 		this.state = {
 			personal: {
-				name: 'Full Name',
-				title: 'Professional Title',
+				name: 'JOHN DOE',
+				title: 'FULLSTACK WEB DEVELOPER',
 				address: '123 Example Rd, Toronto',
 				email: 'example123@gmail.com',
 				tel: '(012) 345-6789',
 				website: 'https://example.linkedin.com',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
 			},
 			work: [
 				{
@@ -29,8 +29,17 @@ class CV extends Component {
 					position: 'Junior Web Developer',
 					company: 'Pear Inc.',
 					location: 'Toronto, Canada',
-					from: 'Nov 2020',
+					from: 'Nov 2021',
 					to: 'Present',
+					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+				},
+				{
+					id: uniqid(),
+					position: 'Software Engineer Intern',
+					company: 'AirCnD',
+					location: 'Vancouver, Canada',
+					from: 'Aug 2020',
+					to: 'Aug 2021',
 					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 				}
 			],
@@ -39,17 +48,46 @@ class CV extends Component {
 					id: uniqid(),
 					name: 'King\'s University',
 					location: 'Kingston, Canada',
-					cert: 'Computer Science (Bachelors)',
-					from: '2017',
+					cert: 'MSc Hons. Computer Science',
+					from: '2018',
 					to: '2020',
 					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-				}
+				},
+				{
+					id: uniqid(),
+					name: 'University of Toronto',
+					location: 'Toronto, Canada',
+					cert: 'BSc Hons. Engineering',
+					from: '2015',
+					to: '2018',
+					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+				},
 			],
 			skills: [
 				{
 					id: uniqid(),
 					skill: 'JavaScript',
-				}
+				},
+				{
+					id: uniqid(),
+					skill: 'ReactJS & NodeJS',
+				},
+				{
+					id: uniqid(),
+					skill: 'SQL',
+				},
+				{
+					id: uniqid(),
+					skill: 'HTML & CSS',
+				},
+				{
+					id: uniqid(),
+					skill: 'Unix shell',
+				},
+				{
+					id: uniqid(),
+					skill: 'Python',
+				},
 			],
 		}
 
@@ -138,7 +176,7 @@ class CV extends Component {
 				<PersonalSection info={this.state.personal} handleChange={this.updatePersonalDetails} />
 				<div className="cv-skills">
 					<div className="section-header">
-						<h3>Skills</h3>
+						<h3>SKILLS</h3>
 						<AddSectionButton handleClick={this.addSkill} />
 					</div>
 					<div className="sections skills-sections">
@@ -149,7 +187,7 @@ class CV extends Component {
 				</div>
 				<div className="cv-work">
 					<div className="section-header">
-						<h3>Work Experience</h3>
+						<h3>WORK EXPERIENCE</h3>
 						<AddSectionButton handleClick={this.addWorkExperience} />
 					</div>
 					<div className="sections work-sections">
@@ -160,7 +198,7 @@ class CV extends Component {
 				</div>
 				<div className="cv-education">
 					<div className="section-header">
-						<h3>Education</h3>
+						<h3>EDUCATION</h3>
 						<AddSectionButton handleClick={this.addEducation} />
 					</div>
 					<div className="sections education-sections">

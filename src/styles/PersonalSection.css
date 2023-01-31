@@ -23,10 +23,11 @@
 	display: grid;
 	grid-template-columns: auto 1fr;
 	gap: 4px;
+	align-items: center;
 }
 
 .contact-details p, .contact-details input {
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .contact-details img {

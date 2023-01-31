@@ -21,6 +21,10 @@
 	white-space: pre-line;
 }
 
+.work-from, .work-to {
+	font-size: 12px;
+}
+
 .work-section button {
 	position: absolute;
 	top: 0px;

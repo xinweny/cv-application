@@ -28,3 +28,7 @@
 	font-size: 12px;
 	white-space: pre-line;
 }
+
+.ed-from, .ed-to {
+	font-size: 12px;
+}
