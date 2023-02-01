@@ -6,7 +6,7 @@ import '../styles/EducationSection.css';
 function EducationSection(props) {
 	const { ed, handleBtnClick } = props;
 
-	const bindArgs = field => (e => props.handleChange('education', ed.id, field, e.target.value))
+	const bindArgs = field => (e => props.handleChange(ed.id, field, e.target.value))
 
 	return (
 		<div className="education-section section">
@@ -26,7 +26,7 @@ function EducationSection(props) {
 				</div>
 				<CVField clsName="ed-description" value={ed.description} handleChange={bindArgs('description')} isTextArea={true} placeholder="Description" />
 			</div>
-			<DeleteSectionButton section='education' id={ed.id} handleClick={handleBtnClick} />
+			<DeleteSectionButton id={ed.id} handleClick={handleBtnClick} />
 		</div>
 	);
 }

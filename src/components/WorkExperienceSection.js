@@ -5,7 +5,7 @@ import '../styles/WorkExperienceSection.css';
 function WorkExperienceSection(props) {
 	const { work, handleBtnClick } = props;
 
-	const bindArgs = field => (e => props.handleChange('work', work.id, field, e.target.value));
+	const bindArgs = field => (e => props.handleChange(work.id, field, e.target.value));
 
 	return (
 		<div className="work-section section">
@@ -25,7 +25,7 @@ function WorkExperienceSection(props) {
 				</div>
 				<CVField clsName="work-description" value={work.description} handleChange={bindArgs('description')} isTextArea={true} placeholder="Job roles and responsibilities" />
 			</div>
-			<DeleteSectionButton section="work" id={work.id} handleClick={handleBtnClick} />
+			<DeleteSectionButton id={work.id} handleClick={handleBtnClick} />
 		</div>
 	);
 }

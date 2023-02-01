@@ -5,7 +5,7 @@ function DeleteSectionButton(props) {
 	return (
 		<button className="delete-button" onClick={event => {
 			event.preventDefault();
-			props.handleClick(props.section, props.id);
+			props.handleClick(props.id);
 		}}>
 			<img src={deleteBtnIcon} alt="Delete button" />
 		</button>
