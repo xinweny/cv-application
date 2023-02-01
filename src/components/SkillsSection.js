@@ -1,13 +1,10 @@
-import { Component } from 'react';
-
 import CVField from './CVField';
 import DeleteSectionButton from './DeleteSectionButton';
 
 import '../styles/SkillsSection.css';
 
-class SkillsSection extends Component {
-	render() {
-		const { skill, handleBtnClick, handleChange } = this.props;
+function SkillsSection(props) {
+		const { skill, handleBtnClick, handleChange } = props;
 
 		return (
 			<div className="li-wrapper">
@@ -17,7 +14,6 @@ class SkillsSection extends Component {
 				</div>
 			</div>
 		);
-	}
 }
 
 export default SkillsSection;
